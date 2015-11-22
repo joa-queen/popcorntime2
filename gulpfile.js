@@ -1,6 +1,5 @@
 var gulp		= require('gulp'),
 	run			= require('gulp-run'),
-	electron	= require('gulp-electron'),
 	concat		= require('gulp-concat'),
 	livereload	= require('gulp-livereload'),
 	sass		= require('gulp-sass'),
@@ -17,7 +16,7 @@ var destination = {
 	images		: 'build/images'
 };
 
-gulp.task('default', ['scripts', 'styles', 'run', 'watch']);
+gulp.task('default', ['scripts', 'styles', 'images', 'run', 'watch']);
 
 gulp.task('scripts', function () {});
 
@@ -30,8 +29,14 @@ gulp.task('styles', function () {
 		.pipe(livereload())
 });
 
+gulp.task('images', function () {
+	return gulp.src(source.images + '/**/*.svg')
+		.pipe(gulp.dest(destination.images));
+});
+
 gulp.task('run', function () {
-	return run('npm start').exec();
+	run('babel --presets react js/ --watch --out-dir build/js').exec();
+	run('npm start').exec();
 });
 
 gulp.task('watch', ['scripts', 'styles'], function () {
