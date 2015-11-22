@@ -10,7 +10,16 @@
   "license": "ISC",
   "devDependencies": {
     "babel-preset-react": "^6.1.18",
-    "electron-prebuilt": "^0.35.1"
+    "connect-livereload": "^0.5.3",
+    "electron-prebuilt": "^0.35.1",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-run": "^1.6.11",
+    "gulp-sass": "^2.1.0",
+    "node-bourbon": "^4.2.3",
+    "node-sass": "^3.4.2"
   },
   "dependencies": {
     "opensubtitles-api": "^2.1.1",
