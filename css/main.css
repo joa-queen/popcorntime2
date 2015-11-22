@@ -1,0 +1,45 @@
+body {
+  background-color: #262629;
+  color: #fff;
+  margin: 0;
+  overflow-y: hidden;
+  font-size: 12px;
+}
+
+/** TOOLBAR **/
+
+.toolbar {
+  background: linear-gradient(#353535, #191919);
+  height: 30px;
+}
+
+.toolbar ul.buttons {
+  margin: 0;
+}
+
+.toolbar ul.buttons img {
+
+}
+
+
+
+
+/** MOVIES LIST **/
+
+#moviesList {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+#moviesList li {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 0;
+}
+
+#moviesList img {
+  width: 75px;
+}
