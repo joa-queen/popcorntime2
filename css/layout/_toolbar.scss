@@ -14,9 +14,13 @@
 		opacity: .4;
 		cursor: pointer;
 
-		&.movies,
-		&.series {
+		&.movies {
 			background-image: url('../images/icon-movie.svg');
+		}
+
+		&.series {
+			background-size: 40%;
+			background-image: url('../images/icon-tv.svg');
 		}
 
 		&.search {
