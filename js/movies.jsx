@@ -195,7 +195,7 @@ var Movie = React.createClass({
             <h1 className="title">{movie.title}</h1>
             <div className="play" onClick={this.playMovie}></div>
           </div>
-          {/*Scene*/}
+          {Scene}
         </div>
       </div>
     );
@@ -230,14 +230,11 @@ var MovieMain = React.createClass({
 
     return (
       <div>
-        <button onClick={this.props.playMovie}>Reproducir</button>
-        <br />
 
-        Rating: {movie.rating}<br />
-        {movie.runtime}m - {movie.year} - {movie.genres.join(', ')}<br /><br />
-        {Plot}
-
-        <br /><br />
+        <p>Rating: {movie.rating}</p>
+        <p>{movie.runtime}m - {movie.year} - {movie.genres.join(', ')}</p>
+        <p>{Plot}</p>
+        
         <ul>
           <li onClick={this.props.qualityScene}>{movie.torrents[this.props.quality].quality}</li>
           {Subtitles}

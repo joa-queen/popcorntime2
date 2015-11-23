@@ -11,9 +11,12 @@
 		background-size: 25%;
 		background-repeat: no-repeat;
 		background-position: center;
-		opacity: .4;
-		cursor: pointer;
-		text-align: center;
+		line-height: 4em;
+
+		&:not(.title) {
+			opacity: .4;
+			cursor: pointer;			
+		}
 
 		&.movies {
 			background-image: url('../images/icon-movie.svg');
@@ -38,8 +41,6 @@
 
 		&.title {
 			@include flex-grow(1);
-			opacity: 1;
-			line-height: 4em;
 		}
 
 		&.active {
