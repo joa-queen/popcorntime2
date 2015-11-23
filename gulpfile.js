@@ -18,7 +18,9 @@ var destination = {
 
 gulp.task('default', ['scripts', 'styles', 'images', 'run', 'watch']);
 
-gulp.task('scripts', function () {});
+gulp.task('scripts', function () {
+	run('babel --presets react js/ --watch --out-dir build/js').exec();
+});
 
 gulp.task('styles', function () {
 	return gulp.src(source.styles + '/*.scss')
@@ -35,12 +37,11 @@ gulp.task('images', function () {
 });
 
 gulp.task('run', function () {
-	run('babel --presets react js/ --watch --out-dir build/js').exec();
 	run('npm start').exec();
 });
 
 gulp.task('watch', ['scripts', 'styles'], function () {
 	livereload.listen();
-	//gulp.watch([source.scripts + '/**/*.js'], ['scripts']);
+	gulp.watch([source.scripts + '/**/*.js*'], ['scripts']);
 	gulp.watch(source.styles + '/**/*.scss', ['styles']);
 });

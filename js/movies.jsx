@@ -88,10 +88,10 @@ var Movies = React.createClass({
           <div>
 
             <div className="toolbar">
-              <div className="tab movies active"></div>
-              <div className="tab series"></div>
+              <div className="item movies active"></div>
+              <div className="item series"></div>
 
-              <div className="tab search"></div>
+              <div className="item search"></div>
             </div>
 
             <div className="list">
@@ -183,19 +183,20 @@ var Movie = React.createClass({
           playMovie={this.playMovie} />;
     }
 
-    var styles = {
-      cover: {
-        width: '100%'
-      }
-    };
-
     return (
       <div>
-        <a href="#" onClick={this.backButton}>Volver</a>
-        <img src={movie.background_image} style={styles.cover} />
-        <h1>{movie.title}</h1>
-
-        {Scene}
+        <div className="toolbar">
+          <div className="item back" onClick={this.backButton}></div>
+          <div className="item title">{movie.title}</div>
+        </div>
+        <div className="content">
+          <div className="main">
+            <img className="cover" src={movie.background_image}/>
+            <h1 className="title">{movie.title}</h1>
+            <div className="play" onClick={this.playMovie}></div>
+          </div>
+          {/*Scene*/}
+        </div>
       </div>
     );
   }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15857) - http://www.bohemiancoding.com/sketch -->
+    <title>Search</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Home-Copy" sketch:type="MSLayerGroup" transform="translate(-286.000000, -18.000000)" fill="#FFFFFF">
+            <g id="Box" transform="translate(0.000000, 7.000000)" sketch:type="MSShapeGroup">
+                <g id="Header" transform="translate(-6.000000, 0.000000)">
+                    <path d="M311.687471,27.1787976 L307.613143,23.105323 C308.3598,22.0588659 308.799829,20.7800207 308.799829,19.3999147 C308.799829,15.8711439 305.928685,13 302.399915,13 C298.871144,13 296,15.8711439 296,19.3999147 C296,22.9286854 298.871144,25.7998293 302.399915,25.7998293 C303.780021,25.7998293 305.058866,25.3597996 306.105323,24.6131429 L310.179935,28.6874708 C310.386439,28.895397 310.659787,28.9997867 310.933134,28.9997867 C311.206482,28.9997867 311.479829,28.895397 311.687471,28.6874708 C312.104176,28.2710497 312.104176,27.5952187 311.687471,27.1787976 L311.687471,27.1787976 Z M302.399915,23.6665244 C300.043324,23.6665244 298.133305,21.7565055 298.133305,19.3999147 C298.133305,17.0433239 300.043324,15.1333049 302.399915,15.1333049 C304.756505,15.1333049 306.666524,17.0433239 306.666524,19.3999147 C306.666524,21.7565055 304.756505,23.6665244 302.399915,23.6665244 L302.399915,23.6665244 Z" id="Search"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

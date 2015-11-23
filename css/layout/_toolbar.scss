@@ -3,9 +3,9 @@
 	@include display(flex);
 	@include flex-direction(row);
 	@include justify-content(space-between);
-	@include linear-gradient(#383838, #2B2B2B);
+	@include align-items(center);
 
-	.tab {
+	.item {
 		@include size(em(100) em(64));
 		@include flex(0 0 em(100));
 		background-size: 25%;
@@ -13,6 +13,7 @@
 		background-position: center;
 		opacity: .4;
 		cursor: pointer;
+		text-align: center;
 
 		&.movies {
 			background-image: url('../images/icon-movie.svg');
@@ -26,7 +27,19 @@
 		&.search {
 			@include align-self(flex-end);
 			margin-left: auto;
-			background-image: url('../images/icon-movie.svg');
+			background-size: 40%;
+			background-position: center 1em;
+			background-image: url('../images/icon-search.svg');
+		}
+
+		&.back {
+			background-image: url('../images/icon-back.svg');
+		}
+
+		&.title {
+			@include flex-grow(1);
+			opacity: 1;
+			line-height: 4em;
 		}
 
 		&.active {
