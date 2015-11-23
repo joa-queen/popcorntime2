@@ -93,15 +93,16 @@ var Movies = React.createClass({
 
               <div className="tab search"></div>
             </div>
-            <ul id="moviesList">
-              {this.state.movies.map(function(movie, i) {
-                return (
-                  <li key={i}><a href="#" onClick={_self.selectMovie.bind(_self, i)}>
-                    <img src={movie.medium_cover_image} alt={movie.title} title={movie.title} width="75" />
-                  </a></li>
-                );
-              })}
-            </ul>
+
+            <div className="list">
+            {this.state.movies.map(function(movie, i) {
+              return (
+                <div className="item" key={i} onClick={_self.selectMovie.bind(_self, i)}>
+                  <img className="cover" src={movie.medium_cover_image} title={movie.title} />
+                </div>
+              );
+            })}
+            </div>
           </div>
         );
       }
