@@ -86,9 +86,12 @@ var Movies = React.createClass({
         var _self = this;
         Content = (
           <div>
+
             <div className="toolbar">
-              <ul className="buttons">
-              </ul>
+              <div className="tab movies active"></div>
+              <div className="tab series"></div>
+
+              <div className="tab search"></div>
             </div>
             <ul id="moviesList">
               {this.state.movies.map(function(movie, i) {

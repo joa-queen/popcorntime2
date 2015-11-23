@@ -1,0 +1,39 @@
+.toolbar {
+	@include size(100% auto);
+	@include display(flex);
+	@include flex-direction(row);
+	@include justify-content(space-between);
+	@include linear-gradient(#383838, #2B2B2B);
+
+	.tab {
+		@include size(em(100) em(64));
+		@include flex(0 0 em(100));
+		background-size: 25%;
+		background-repeat: no-repeat;
+		background-position: center;
+		opacity: .4;
+		cursor: pointer;
+
+		&.movies,
+		&.series {
+			background-image: url('../images/icon-movie.svg');
+		}
+
+		&.search {
+			@include align-self(flex-end);
+			margin-left: auto;
+			background-image: url('../images/icon-movie.svg');
+		}
+
+		&.active {
+			opacity: 1;
+			background-color: rgba(black, .25);
+			box-shadow: inset 0 -3px 0 $hotred;
+		}
+
+		&:hover {
+			opacity: 1;
+			background-color: rgba(black, .1);
+		}
+	}
+}
